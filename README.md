@@ -13,11 +13,11 @@ CTCF-MP requires:
 Put hg19 sequences in a folder named 'Chromosome' and named each file as ‘chr1.fasta’,'chr2.fasta'...
 The folder directory should look like this:
 
-\Chromosome
-\CTCF-MP
-	\CTCF-MP\Code
-	\CTCF-MP\Data
-...
+* \Chromosome
+* \CTCF-MP
+*	\CTCF-MP\Code
+*	\CTCF-MP\Data
+* ...
 
 
 ## Usage
