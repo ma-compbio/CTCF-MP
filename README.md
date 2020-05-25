@@ -35,3 +35,20 @@ python entrance.py -c gm12878 -d conv -r 250
 One problem that might occur in the de novo prediction using CTCF-MP is the uncalibrated probability. The models are usually trained in a balanced dataset while the actual prediction is on an imbalanced dataset(more negative samples as compared to the positive ones). So, one should tune the threshold of probability from the prediction model to get the final results. (For instance, using 0.6 or 0.8 as threshold rather than the default one 0.5).
 
 Because how to tune the threshold remains an open problem, we don't implement a specific one in the scripts. A possible solution would be to separate an individual imbalanced validation set from the training set, and use that validation set to tune the threshold for the highest F1-score. Then one can apply the trained model with the calibrated threshold for the de novo prediction on a new cell line.
+
+## Cite
+
+If you want to cite our work
+
+```
+@article{zhang2018predicting,
+  title={Predicting CTCF-mediated chromatin loops using CTCF-MP},
+  author={Zhang, Ruochi and Wang, Yuchuan and Yang, Yang and Zhang, Yang and Ma, Jian},
+  journal={Bioinformatics},
+  volume={34},
+  number={13},
+  pages={i133--i141},
+  year={2018},
+  publisher={Oxford University Press}
+}
+```
